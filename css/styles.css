@@ -101,7 +101,7 @@ img {
 
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .logo {
@@ -127,7 +127,7 @@ img {
 
 .contact-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .contact-link:hover,
@@ -139,7 +139,7 @@ img {
   background-color: #2e2f42;
 }
 
-.hero .container {
+.hero-container {
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -178,17 +178,22 @@ img {
   background-color: #404bbf;
 }
 
-.benefits .container {
+.benefits-container {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .benefits-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
+}
+
+.benefits-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .benefits-list-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -200,39 +205,44 @@ img {
   background-color: #f4f4fd;
 }
 
-.team .container {
+.team-container {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .team-list {
   display: flex;
-  column-gap: 24px;
-  text-align: center;
+  gap: 24px;
 }
 
 .team-item {
   border-radius: 0 0 4px 4px;
-  padding-bottom: 32px;
   background-color: #ffffff;
 }
 
+.item-name {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .team-list-title {
-  margin-top: 32px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
 }
 
 .team-list-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #434455;
 }
 
-.portfolio .container {
+.portfolio-container {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -263,13 +273,13 @@ img {
   background-color: #2e2f42;
 }
 
-.page-footer .container {
+.page-footer-container {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .page-footer .logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
